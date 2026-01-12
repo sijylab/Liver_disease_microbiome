@@ -10,7 +10,7 @@ This repository contains the source code and processed data files necessary to r
 ## 1. Data Availability
 
 ### Raw Sequencing Data
-The raw sequencing reads generated in this study have been deposited in the [NCBI SRA] database under the accession number:
+The raw sequencing reads generated in this study have been deposited in the NCBI SRA database under the accession number:
 * **Accession Number:** PRJNA1281303, PRJNA1281307, PRJNA1281308, PRJNA1281344, PRJNA1281347, PRJNA1281352, PRJNA1281353, PRJNA1281362, PRJNA1281365, and PRJNA1281367
 
 
