@@ -26,7 +26,6 @@ The processed data files included in this repository are:
     * `Supple_table_KO.xlsx`: KEGG Orthology (KO) functional annotation table inferred from the microbiome data.
 * **Metadata:**
     * The sample metadata (including grouping information, age, sex, and BMI) is provided as **Supplementary Table** accompanying the published manuscript.
-    * **Note for Reproducibility:** To run the analysis scripts provided here, please use the `Supple_table_xx` from the manuscript or format your own metadata file to match the sample IDs in the ASV table.
 
 ---
 
