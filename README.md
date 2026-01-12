@@ -69,5 +69,3 @@ All machine learning models and validation scripts used in this study are mainta
    - `script_dmm.R` (community clustering)
    - `script_phate.R` (PHATE analysis)
    - `script_tree.R` (phylogenetic analyses)
-
-Each script contains internal comments describing required input formats and preprocessing steps.
