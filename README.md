@@ -31,7 +31,7 @@ The processed data files provided in this repository are organized as follows:
 These processed genus-level tables were derived from the ASV tables after standard filtering, normalization, and taxonomic aggregation steps as described in the Methods section of the manuscript.
 
 #### Metadata
-Sample metadata (including disease stage, age, sex, and BMI) are provided as a Supplementary Table accompanying the published manuscript. For reproducibility, users should export the metadata table as `metadata.csv` and place it in the working directory when running the scripts.
+Sample metadata (including disease stage, age, sex, and BMI) are provided as a Supplementary Table accompanying the published manuscript. 
 
 ---
 
