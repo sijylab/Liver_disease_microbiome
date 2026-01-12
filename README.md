@@ -49,7 +49,7 @@ The machine learning models and associated validation scripts used in this study
 To run the scripts provided in this repository, the following R packages are required:
 
 * R version: 4.3.0
-* Key Packages: `DirichletMultinomial`, `phyloseq`, `vegan`, `phateR`, `ape`, etc.
+* Key Packages: `DirichletMultinomial`, `vegan`, `phateR`, `ape`, etc.
 
 ---
 
