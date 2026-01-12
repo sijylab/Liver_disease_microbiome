@@ -31,7 +31,6 @@ The processed data files included in this repository are:
 
 ## 2. Analysis Scripts
 
-The R scripts provided here cover the downstream analysis, including DMM clustering, beta diversity, and figure generation.
 
 ### Diversity & Clustering (DMM)
 * `script_dmm.R`: Script for performing Dirichlet Multinomial Mixtures (DMM) modeling to identify community types.
@@ -41,7 +40,7 @@ The R scripts provided here cover the downstream analysis, including DMM cluster
 
 ### Machine Learning Analysis
 The machine learning models and associated validation scripts used in this study are maintained in a separate repository by the first author. Please refer to the link below for full reproducibility of the ML section:
-* **Repository Link:** [Insert Link to 1st Author's GitHub Repo]
+* **Repository Link:** [https://github.com/jorgevazcast/Liver_Disease_Microbiome_ML]
 
 ---
 
