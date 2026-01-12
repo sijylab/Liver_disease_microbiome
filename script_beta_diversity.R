@@ -3,24 +3,11 @@ library(vegan)
 library(ggplot2)
 
 # 2. Load Data
-input_genus <- "genus.csv"  
-input_meta  <- "metadata.csv"   
-
-if(file.exists(input_genus) & file.exists(input_meta)){
-  
-  genus_raw <- read.csv(input_genus, header=TRUE, row.names=1)
-  genus_data <- as.data.frame(t(genus_raw)) 
-  meta_data <- read.csv(input_meta, header=TRUE, row.names=1)
-  common_samples <- intersect(rownames(genus_data), rownames(meta_data))
-  genus_data <- genus_data[common_samples, ]
-  meta_data <- meta_data[common_samples, ]
-  
-} else {
-  stop("Input files not found. Please check filenames.")
-}
-
+genus_raw  <- read.csv("beta_genus.csv", header=TRUE, row.names=1, check.names=FALSE)
+meta_data  <- read.csv("metadata.csv",  header=TRUE, row.names=1, check.names=FALSE)  
 
 # 3. PCoA Ordination & Plotting
+distance_matrix <- vegdist(genus_raw, method="robust.aitchison", binary=FALSE)
 
 pcoa_res <- cmdscale(distance_matrix, k = 3, eig = TRUE)
 
