@@ -57,8 +57,8 @@ To run the scripts provided in this repository, the following R packages are req
 
 1.  Download the repository.
 2.  Load the datasets into R using the provided scripts.
-3.  Run `script_beta_diversity.R` to reproduce the beta diversity results.
+3.  Run `script_beta_diversity.R` to reproduce the beta diversity results (input: beta_genus.csv).
 4.  Run `script_dmm.R` to reproduce the clustering results.
-5.  Run `script_phate.R` to reproduce the phate results.
+5.  Run `script_phate.R` to reproduce the phate results (input: phate_genus.csv).
 6.  Run `script_tree.R` to reproduce the tree results.
 
