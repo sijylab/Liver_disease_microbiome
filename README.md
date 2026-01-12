@@ -25,7 +25,7 @@ The processed data files provided in this repository are organized as follows:
 - **Supple_table_KO.xlsx**: KEGG Orthology (KO) functional annotation table inferred from the microbiome data.
 
 #### `data/processed/`
-- **beta_genus.csv**: Genus-level abundance table used as input for beta diversity and DMM clustering analyses.
+- **beta_genus.csv**: Genus-level abundance table used as input for beta diversity analyses.
 - **phate_genus.csv**: Genus-level abundance table used as input for PHATE dimensionality reduction analysis.
 
 These processed genus-level tables were derived from the ASV tables after standard filtering, normalization, and taxonomic aggregation steps as described in the Methods section of the manuscript.
