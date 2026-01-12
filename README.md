@@ -34,7 +34,7 @@ The processed data files included in this repository are:
 
 ### Diversity & Clustering (DMM)
 * `script_dmm.R`: Script for performing Dirichlet Multinomial Mixtures (DMM) modeling to identify community types.
-* `script_beta_diversity.R`: Script for calculating beta diversity metrics (e.g., Bray-Curtis, UniFrac) and PCoA plotting.
+* `script_beta_diversity.R`: Script for calculating beta diversity metrics and PCoA plotting.
 * `script_tree.R`: Script for phylogenetic tree construction and manipulation associated with the analysis.
 * `script_phate.R`: Script for PHATE dimensionality reduction analysis.
 
