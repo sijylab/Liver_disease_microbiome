@@ -50,8 +50,6 @@ All machine learning models and validation scripts used in this study are mainta
 
 🔗 https://github.com/jorgevazcast/Liver_Disease_Microbiome_ML
 
-Please refer to that repository for full reproducibility of the machine learning analyses.
-
 ---
 
 ## 3. System Requirements & Dependencies
