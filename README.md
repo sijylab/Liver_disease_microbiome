@@ -1,64 +1,81 @@
-# Liver disease microbiome
+# Liver Disease Microbiome
 
-This repository contains the source code and processed data files necessary to reproduce the analysis and figures presented in the manuscript:
+This repository contains the source code and processed data files required to reproduce the analyses and figures presented in the manuscript:
 
-> **Title:** Stage-dependent gut microbiome and functional signatures across the liver disease spectrum: an integrative multi-cohort study
-
+**Title:**  
+Stage-dependent gut microbiome and functional signatures across the liver disease spectrum: an integrative multi-cohort study
 
 ---
 
 ## 1. Data Availability
 
 ### Raw Sequencing Data
-The raw sequencing reads generated in this study have been deposited in the NCBI SRA database under the accession number:
-* **Accession Number:** PRJNA1281303, PRJNA1281307, PRJNA1281308, PRJNA1281344, PRJNA1281347, PRJNA1281352, PRJNA1281353, PRJNA1281362, PRJNA1281365, and PRJNA1281367
+All raw 16S rRNA gene and shotgun metagenomic sequencing reads generated in this study have been deposited in the NCBI Sequence Read Archive (SRA) under the following accession numbers:
 
+**PRJNA1281303, PRJNA1281307, PRJNA1281308, PRJNA1281344, PRJNA1281347, PRJNA1281352, PRJNA1281353, PRJNA1281362, PRJNA1281365, PRJNA1281367**
+
+---
 
 ### Processed Data & Metadata
-The processed data files included in this repository are:
 
-* **ASV Tables:**
-    * `Supple_table_ASV.csv` (and `.zip`): Raw ASV count table.
-    * `Supple_table_ASV_taxa.csv`: Taxonomic classification for each ASV.
-* **Species-level Data:**
-    * `Supple_table_species.xlsx`: Processed species-level abundance table.
-* **Functional Annotation:**
-    * `Supple_table_KO.xlsx`: KEGG Orthology (KO) functional annotation table inferred from the microbiome data.
-* **Metadata:**
-    * The sample metadata (including grouping information, age, sex, and BMI) is provided as **Supplementary Table** accompanying the published manuscript.
+The processed data files provided in this repository are organized as follows:
+
+#### `data/raw/`
+- **Supple_table_ASV.csv** (and .zip): Raw ASV count table.
+- **Supple_table_ASV_taxa.csv**: Taxonomic classification corresponding to each ASV.
+- **Supple_table_species.xlsx**: Processed species-level abundance table derived from ASV data.
+- **Supple_table_KO.xlsx**: KEGG Orthology (KO) functional annotation table inferred from the microbiome data.
+
+#### `data/processed/`
+- **beta_genus.csv**: Genus-level abundance table used as input for beta diversity and DMM clustering analyses.
+- **phate_genus.csv**: Genus-level abundance table used as input for PHATE dimensionality reduction analysis.
+
+These processed genus-level tables were derived from the ASV tables after standard filtering, normalization, and taxonomic aggregation steps as described in the Methods section of the manuscript.
+
+#### Metadata
+Sample metadata (including disease stage, age, sex, and BMI) are provided as a Supplementary Table accompanying the published manuscript.  
+For reproducibility, users should export the metadata table as `metadata.csv` and place it in the working directory when running the scripts.
 
 ---
 
 ## 2. Analysis Scripts
 
+### Diversity, Clustering, and Ordination
+- **script_beta_diversity.R**: Calculates beta diversity metrics and generates PCoA plots  
+  *Input:* `data/processed/beta_genus.csv`, `metadata.csv`
+- **script_dmm.R**: Performs Dirichlet Multinomial Mixtures (DMM) modeling to identify community types  
+  *Input:* `data/processed/beta_genus.csv`, `metadata.csv`
+- **script_phate.R**: Performs PHATE dimensionality reduction analysis  
+  *Input:* `data/processed/phate_genus.csv`, `metadata.csv`
+- **script_tree.R**: Phylogenetic tree construction and manipulation associated with the analysis
 
-### Diversity & Clustering (DMM)
-* `script_dmm.R`: Script for performing Dirichlet Multinomial Mixtures (DMM) modeling to identify community types.
-* `script_beta_diversity.R`: Script for calculating beta diversity metrics and PCoA plotting.
-* `script_tree.R`: Script for phylogenetic tree construction and manipulation associated with the analysis.
-* `script_phate.R`: Script for PHATE dimensionality reduction analysis.
+---
 
 ### Machine Learning Analysis
-The machine learning models and associated validation scripts used in this study are maintained in a separate repository by the first author. Please refer to the link below for full reproducibility of the ML section:
-* **Repository Link:** https://github.com/jorgevazcast/Liver_Disease_Microbiome_ML
+All machine learning models and validation scripts used in this study are maintained in a separate repository:
+
+🔗 https://github.com/jorgevazcast/Liver_Disease_Microbiome_ML
+
+Please refer to that repository for full reproducibility of the machine learning analyses.
 
 ---
 
 ## 3. System Requirements & Dependencies
 
-To run the scripts provided in this repository, the following R packages are required:
-
-* R version: 4.3.0
-* Key Packages: `DirichletMultinomial`, `vegan`, `phateR`, `ape`, etc.
+- **R version:** 4.3.0
+- **Key packages:**  
+  `DirichletMultinomial`, `vegan`, `phateR`, `ape`, `phyloseq`, `microbiome`, `ggplot2`, `ggpubr`
 
 ---
 
 ## 4. Usage Instructions
 
-1.  Download the repository.
-2.  Load the datasets into R using the provided scripts.
-3.  Run `script_beta_diversity.R` to reproduce the beta diversity results (input: beta_genus.csv).
-4.  Run `script_dmm.R` to reproduce the clustering results.
-5.  Run `script_phate.R` to reproduce the phate results (input: phate_genus.csv).
-6.  Run `script_tree.R` to reproduce the tree results.
+1. Clone or download this repository.
+2. Place the metadata file (`metadata.csv`) in your working directory.
+3. Run the analysis scripts in the following order, as needed:
+   - `script_beta_diversity.R` (beta diversity and ordination)
+   - `script_dmm.R` (community clustering)
+   - `script_phate.R` (PHATE analysis)
+   - `script_tree.R` (phylogenetic analyses)
 
+Each script contains internal comments describing required input formats and preprocessing steps.
