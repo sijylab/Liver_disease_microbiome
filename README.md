@@ -2,9 +2,8 @@
 
 This repository contains the source code and processed data files necessary to reproduce the analysis and figures presented in the manuscript:
 
-> **Title:** [Insert Full Title of Your Paper]
-> **Authors:** [List Authors]
-> **Journal:** Gut (Under Revision / In Press)
+> **Title:** Stage-dependent gut microbiome and functional signatures across the liver disease spectrum: an integrative multi-cohort study
+
 
 ---
 
