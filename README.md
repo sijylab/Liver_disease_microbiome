@@ -58,7 +58,13 @@ To run the scripts provided in this repository, the following R packages are req
 1.  Download the repository.
 2.  Unzip `Supple_table_ASV.csv.zip`.
 3.  Load the datasets into R using the provided scripts.
-4.  Run `script_dmm.R` to reproduce the clustering results shown in Figure [X].
+4.  Run `script_beta_diversity.R` to reproduce the beta diversity results.
+5.  Run `script_dmm.R` to reproduce the clustering results.
+6.  Run `script_phate.R` to reproduce the phate results.
+7.  Run `script_tree.R` to reproduce the phate results.
+
+
+
 
 ---
 
