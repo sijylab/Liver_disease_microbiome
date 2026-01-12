@@ -2,8 +2,6 @@
 
 This repository contains the source code and processed data files required to reproduce the analyses and figures presented in the manuscript:
 
-**Title:**  
-Stage-dependent gut microbiome and functional signatures across the liver disease spectrum: an integrative multi-cohort study
 
 ---
 
