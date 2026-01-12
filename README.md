@@ -39,11 +39,8 @@ Sample metadata (including disease stage, age, sex, and BMI) are provided as a S
 
 ### Diversity, Clustering, and Ordination
 - **script_beta_diversity.R**: Calculates beta diversity metrics and generates PCoA plots  
-  *Input:* `data/processed/beta_genus.csv`, `metadata.csv`
 - **script_dmm.R**: Performs Dirichlet Multinomial Mixtures (DMM) modeling to identify community types  
-  *Input:* `data/processed/beta_genus.csv`, `metadata.csv`
 - **script_phate.R**: Performs PHATE dimensionality reduction analysis  
-  *Input:* `data/processed/phate_genus.csv`, `metadata.csv`
 - **script_tree.R**: Phylogenetic tree construction and manipulation associated with the analysis
 
 ---
