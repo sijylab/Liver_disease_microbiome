@@ -40,7 +40,7 @@ The processed data files included in this repository are:
 
 ### Machine Learning Analysis
 The machine learning models and associated validation scripts used in this study are maintained in a separate repository by the first author. Please refer to the link below for full reproducibility of the ML section:
-* **Repository Link:** [https://github.com/jorgevazcast/Liver_Disease_Microbiome_ML]
+* **Repository Link:** https://github.com/jorgevazcast/Liver_Disease_Microbiome_ML
 
 ---
 
