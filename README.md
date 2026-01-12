@@ -1,2 +1,1 @@
-# Default
-Liver disease microbiome
+# Liver disease microbiome
