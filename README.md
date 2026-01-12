@@ -62,11 +62,3 @@ To run the scripts provided in this repository, the following R packages are req
 5.  Run `script_phate.R` to reproduce the phate results.
 6.  Run `script_tree.R` to reproduce the phate results.
 
-
-
-
----
-
-## Contact
-For any questions regarding the data or code, please contact:
-[Your Name/Email or Corresponding Author's Email]
